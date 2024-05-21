@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="crearCliente" style="margin-top: 30px;">
+        <input type="text" placeholder="Introdueix el dni" id="dni"> 
+        <input type="text" placeholder="Introdueix el teu nom" id="nombre"> 
+        <input type="text" placeholder="Introdueix el teu cognom" id="apellido">
+        <input type="button" id="botonCreate" value="Crear Cliente" onclick="crearCliente()">
+    </section>
+
+    <section id="eliminarCliente" style="margin-top: 30px;">
+        <input type="text" placeholder="Introdueix el dni" id="dniEliminar"> 
+        <input type="button" id="botonCreate" value="Eliminar Cliente" onclick="eliminarCliente()">
+    </section>
+
+    <section id="crearCuenta" style="margin-top: 30px;">
+        <input type="text" placeholder="Introdueix el dni" id="dniAfegirCuenta"> 
+        <input type="button" id="botonCreate" value="Crear Cuenta" onclick="crearCuenta()">
+    </section>
+
+    <section id="IngresarDinero" style="margin-top: 30px;">
+        <input type="text" placeholder="Introdueix el num. dni" id="dniClienteIngresar"> 
+        <input type="number" placeholder="Introdueix el num. cuenta" id="numCuentaIngresar"> 
+        <input type="text" placeholder="Importe a ingresar" id="dineroIngreso"> 
+        <input type="button" id="botonCreate" value="Ingresar dinero" onclick="ingresarDinero()">
+    </section>
+
+    <section id="RetirarDinero" style="margin-top: 30px;">
+        <input type="text" placeholder="Introdueix el num. dni" id="dniClienteRetirar">
+        <input type="text" placeholder="Introdueix el num. cuenta" id="numCuenta"> 
+        <input type="text" placeholder="Importe a retirar" id="dineroRetirado"> 
+        <input type="button" id="botonCreate" value="Retirar dinero" onclick="retirarDinero()">
+    </section>
+
+    <div id="result"></div>
+
+    <script src="class client.js"></script>
+    <script src="class cuenta.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

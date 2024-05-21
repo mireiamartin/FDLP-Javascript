@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> segundo documento</h2>
+   
+    <button type="button" onclick="calcular()">click me</button>
+
+<div id = "cuadrado" style="background-color: blanchedalmond; width: 50px; height: 50px">
+</div>
+
+<button type="button" onclick="cambiarColor()"> Cambiar color</button>
+   
+   <script>
+
+        function calcular(){
+            console.log(4 + 78)
+        }
+
+        function cambiarColor(){
+            let cuadrado = document.getElementById('cuadrado')
+            cuadrado.style.backgroundColor = 'red'
+        }
+
+    </script>
+</body>
+</html>

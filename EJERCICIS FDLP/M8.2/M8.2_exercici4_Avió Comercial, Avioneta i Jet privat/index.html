@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="create">
+        <label for="tipus">A tipus d'avió: Escriu 1, per l'avió comercial, 2 per l'avioneta, 3 pel Jet Privat</label> <br>
+        <input type="text" placeholder="tipus d'avió" id="tipus"> <br>
+        <input type="text" placeholder="número d'avió" id="numAvio">
+        <input type="text" placeholder="marca" id="marca">
+        <input type="text" placeholder="model" id="model">
+        <input type="number" placeholder="carrega en KG" id="carrega">
+        <input type="number" placeholder="llargaria en metres" id="llargaria">
+        <input type="number" placeholder="número d'hèlix" id="numHelix">
+        <input type="number" placeholder="número de passatgers" id="numPassatgers">
+        <input type="button" value="donar d'alta l'avió" onclick="afegirAvio()">
+    </section>
+
+    <section id="eliminar" style="margin-top: 30px;">
+        <input type="text" placeholder="número d'avió a eliminar" id="numAvioEliminar">
+        <input type="button" value="eliminar avió" onclick="eliminarAvio()">
+    </section>
+
+    <section id="mostrar" style="margin-top: 30px;">
+        <input type="text" placeholder="número d'avió a veure" id="numAvioMostrar">
+        <input type="button" value="mostrar avió" onclick="mostrarAvio()">
+    </section>
+
+    <div id="result"></div>
+
+    <script src="classAvio.js"></script>
+    <script src="classAvioneta.js"></script>
+    <script src="classComercial.js"></script>
+    <script src="classJet.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id= "create">
+        <label for="tipus">Indica el tipus d'edifici: Escriu 1, pel Cinema, 2 per l'hospital, 3 per l'hotel</label> <br>
+        <input type="text" placeholder="tipus d'edifici" id="tipus"> <br>
+        <input type="text" placeholder="nom edifici" id="nom">
+        <input type="text" placeholder="número de plantes" id="numPlantes">
+        <input type="text" placeholder="superficie en m2" id="superficie">
+        <input type="number" placeholder="número d'assistents" id="assistents">
+        <input type="number" placeholder="número de malalts" id="numMalalts">
+        <input type="number" placeholder="número d'habitacions" id="numHabitacions">
+        <input type="button" value="donar d'alta l'edifici" onclick="crearEdifici()">
+    </section>
+
+    <section id="eliminar" style="margin-top: 30px;">
+        <input type="text" placeholder="Nom de l'edifici a eliminar" id="nomEdificiEliminar">
+        <input type="button" value="eliminar edifici" onclick="eliminarEdifici()">
+    </section>
+
+    <section id="mostrar" style="margin-top: 30px;">
+        <input type="text" placeholder="Nom de l'edifici a veure" id="nomEdificiMostrar">
+        <input type="button" value="mostrar edifici" onclick="mostrarEdifici()">
+    </section>
+
+    <div id="result"></div>
+    
+    <script src="class Edifici.js"></script>
+    <script src="class Hospital.js"></script>
+    <script src="class Cinema.js"></script>
+    <script src="class Hotel.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

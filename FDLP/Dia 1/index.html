@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Esto es una introducción a JS</h1>
+    <script>
+    
+    // Este es un output del objeto window
+    alert('Hola Clase');
+    
+    var nombre = 'Mireia'
+    let apellido = 'Martín'
+    let espacioEnBlanco = " "
+
+    let nombreCompleto = nombre + espacioEnBlanco + apellido;
+
+    window.alert(nombreCompleto)
+
+    apellido = 'Ruiz'
+    // window.alert(apellido)
+
+    nombreCompleto = 2; // Number
+
+    // window.alert(nombreCompleto)
+
+    const numeroPi = 3.1416
+
+    console.log(numeroPi)
+
+    console.log('Estoy en donde?')
+
+    document.write(numeroPi)
+    //Declaracion de variables
+    // let, var, const
+    // cosas que no estan permitidas
+    //numeros, simbolos...exemple (1number, *number, #number) per definir el nom de la variable
+    // coses que si es poden fer
+    // let _num, $num, Num, num, NUM, nUM
+    let _num = null, $num = 2, Num, num, NUM, nUM
+
+    console.log(_num)
+
+    // null es la opcio de no donarli un valor quan encara no sabem que sera
+    // el undefined surt a la consola quan no li hem donat un valor
+
+
+
+
+
+
+    let nombreUsuario = window.prompt('Dime tu nombre?')
+    document.write(nombreUsuario)
+
+    let miEdad = 45
+    let soyUnTexto = nombre + " " + apellido +  "y tengo" + miEdad + "años"
+    let ejemploStick = `Hola, mi nombre es ${nombre} ${apellido}; y tengo ${miEdad} años`
+
+    // string
+
+    let ejemploString = 'Hola q tal?'
+    let ejemplo2String = new String ('bien y tu')
+
+    console.log(ejemploString)
+    console.log(ejemplo2String)
+
+    // Number
+    let nuevoNumero = 567
+    let nuevoNumero3 = 5987
+    let nuevoNumero5 = new Number (253)
+
+    console.log(nuevoNumero)
+    console.log(nuevoNumero3)
+    console.log(nuevoNumero5)
+
+    let n = '67.45'
+    let m = 67
+    //let l = parseInt(n) //dejara de ser un texto para passar a ser un numero enter, se puede poner dentro del console
+
+    console.log(n + m)
+    console.log(Number,parseInt(n) + m) //SIN DECIMALES
+    console.log(parseFloat(n) + m) //CON DECIMALES
+    console.log(n - m)
+    console.log(n * m)
+    console.log(n / m)
+
+    //Undefined Null NaN aixo m'esta dient si aixo sera un numero o no
+
+    console.log(isNaN('Hola'))
+    console.log(isNaN(89))
+
+    //Boolean
+    // 0 , 1
+    true 
+    false
+
+
+
+
+
+    </script>
+</body>
+</html>

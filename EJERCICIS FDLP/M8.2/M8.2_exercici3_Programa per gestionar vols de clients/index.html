@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="createClient">
+        <input type="text" placeholder="Escriu el teu DNI" id="dniCreate"> <br>
+        <input type="text" placeholder="nacionalitat" id="nacionalitat"> <br>
+        <input type="number" placeholder="edat" id="edad"> <br>
+        
+        <input type="button" value="Crear cliente" onclick="crearCliente()"> <br>
+    </section>
+
+    <section id="delete" style="margin-top: 30px;">
+        <input type="text" placeholder="Escriu el teu DNI" id="dniDelete"> <br>
+        <input type="button" value="Eliminar" onclick="eliminarCliente()"> <br>
+    </section>
+
+    <section id="createVuelo" style="margin-top: 30px;">
+        <input type="text" placeholder="Ingrese su DNI" id="numFind"> <br>
+        <input type="text" placeholder="Id del vuelo" id="numVol"> <br>
+        <input type="text" placeholder="companyia" id="companyia"> <br>
+        <input type="number" placeholder="distancia" id="distancia"> <br>
+        <input type="number" placeholder="motores" id="motores"> <br>
+        <input type="number" placeholder="numPasajeros" id="numPasajeros"> <br>
+        <input type="button" value="Crear Vuelo" onclick="crearVuelo()"> <br>
+    </section>
+
+    <section id="mitjana" style="margin-top: 30px;">
+        <input type="button" value="Calcular mitjana edat" onclick="calcularMitjana()"> <br>
+    </section>
+
+    <section id="petjada" style="margin-top: 30px;">
+        <input type="text" placeholder="Escriu el teu DNI" id="dniPetjada"> <br>
+        <input type="button" value="Petjada client" onclick="petjadaCliente()"> <br>
+    </section>
+
+    <section id="petjadaMitjana" style="margin-top: 30px;">
+        <input type="button" value="Calcular mitjana CO2" onclick="mitjanaPetjada()"> <br>
+    </section>
+
+
+    <div id="result"></div>
+
+    <script src="class vol.js"></script>
+    <script src="class client.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

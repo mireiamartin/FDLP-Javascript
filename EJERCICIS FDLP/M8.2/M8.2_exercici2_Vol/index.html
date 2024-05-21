@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <section id="create">
+        <input type="text" placeholder="Número Vol" id="numVol"> 
+        <input type="text" placeholder="Distància en km" id="distancia"> 
+        <input type="text" placeholder="Nom companyia" id="companyia"> 
+        <input type="text" placeholder="Número passatgers" id="passatgers"> 
+        <input type="text" placeholder="Número motors" id="motors">
+
+        <input type="button" id="botonUpdate" value="Update" onclick="updateVol()">
+        <input type="button" id="botonCreate" value="Crear" onclick="crearVol()">
+    </section>
+
+    <br>
+
+    <section id="delete">
+        <input type="text" placeholder="Número Vol" id="numVolEliminat"> 
+        <input type="button" value="Eliminar" onclick="eliminarVol()">
+    </section>
+
+    <br>
+
+    <section>
+        <input type="text" placeholder="NumVol llegir" id="numVolRead"> 
+        <input type="button" value="Llegir" onclick="veureVol()">
+    </section>
+
+    <br>
+
+    <section>
+        <input type="text" placeholder="NumVol modificar" id="numVolUpdate"> 
+        <input type="button" value="Modificar" onclick="modificarVol()">
+    </section>
+
+    <div id="resultCreate"></div>
+
+    <script src="vol.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

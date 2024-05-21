@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Hola</h1>
+<h6>clase</h6>
+
+    <script>
+    // let, var, const
+
+    let saludo = 'Hola'
+    // <div id= 'result'></div>
+    
+   {
+    saludo = 'adios'
+    //console.log(saludo)
+   } 
+
+   console.log(saludo)
+
+   const PI = 3.14
+
+   let nom = null // si no pones null sale undefined (es elecció del programador posar una cosa o una altra)
+   console.log(nom) 
+
+   //tipos de datos
+   //string
+   //number (NaN)
+   //boolean (falsy, thruty)
+   //undefined
+   //null
+
+   //como preguntar que tipo de dato es directament al programa
+   console.log(typeof true)
+   console.log(typeof undefined)
+   console.log(typeof null)
+   
+   let numero1 = 45
+   let numero2 = 23
+
+    console.log(numero1 + numero2)
+    console.log(numero1 - numero2)
+    console.log(numero1 * numero2)
+    console.log(numero1 / numero2)
+
+    //cuando el resultado no es un numero entero (exacto), el resutado es 2.4 pero no es cierto ya que hay mas decimales
+    //%, sirve para saber si un numero es divisible entre un numero
+    console.log(12%5)
+    console.log(12%3)
+    console.log(12%4)
+    console.log(34512%3)
+
+    //metodos de salida
+    //console.log('1')
+    //document.write('2')
+    //window.alert('3')
+
+    //metodos de entrada
+    //window.promt('Cual es tu edad?')
+    
+
+    //'6' //string
+   //parseInt('6')
+   //parsefloat('6.8')
+
+   
+   //estructura condicional
+
+   let edad = 45 //number
+   let peque = 5
+   let sol = false
+   let lluvia = false
+
+
+   if('45' > 18) {
+    document.write('Eres mayor de edad')
+   } else{
+    document.write('Eres menor de edad')
+   }
+
+   if(sol == true) {
+    document.write('hace un buen dia')
+   } else{
+    document.write('me cachis')
+   }
+
+   if(sol == true) {
+    document.write('hace un buen dia')
+   } else if (lluvia == true){
+    document.write('pilla el paraguas')
+   } else {
+    document.write("solo esta nublado")
+   }
+
+ //otro ejemplo
+  /* let sueldo = false
+   if (sueldo == true) {
+  //  document.write('me voy al cine')
+} else {
+    document.write('ajo y agua')
+}
+
+    let resultDiv = document.getElementById('result')
+    resultDiv.innerHTML = '<br><br><br>Cualquier cosa' 
+*/
+
+
+    </script>
+  
+
+</body>
+</html>

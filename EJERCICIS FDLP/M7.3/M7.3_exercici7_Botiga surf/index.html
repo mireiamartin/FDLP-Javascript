@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section id="create">
+        <label for="experiencia">Si tens experiència escriu el número 1, si no en tens escriu el número 2</label> 
+        <input type="number" placeholder ="1 si, 2 no" id="experiencia"> <input type="button" id= "botoIntroduirExperiencia" value= "Introduir experiència" onclick="calcularMaterial()"><br><br> </label>
+
+        <input type="number" placeholder ="altura onada" id="alturaOnada">  <input type="button" id= "botoCalcularAlçada" value="Introduir alçada" onclick="calcularAltura()"><br><br>
+        
+        <label for="minutsReserva">Escriu quan vols que duri l'activitat en MINUTS</label>
+        <input type="number" placeholder ="minuts" id="minutsReserva">
+
+        <label for="tipusDeTaula">Escriu quin tipus de taula vols, escriu el número 1, per la taula Espuma, escriu el número 2, per la taula Fibra</label>
+        <input type="number" placeholder ="tipus de taula" id="tipusDeTaula">
+        <input type="button" id = "botoReserva" value= "Introduir dades" onclick="calcularReserva()">
+        <br><br>
+        <label for="numSortida">Escriu un número per sortir del programa</label>
+        <input type="number" placeholder="introdueix un número" id="numSortida">
+        <input type="button" id = "botoSortir" value= "Sortir del programa" onclick="sortir()">
+        <br><br>
+    </section> 
+
+    <div id="result"></div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

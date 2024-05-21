@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let hour = 19
+        let greeting = ""
+
+        if (hour <= 13) {
+            greeting = "Bon dia"
+        } else if (hour <18){
+            greeting = "Bona tarda"
+        } else {
+            greeting = "Bona nit"
+            }
+        
+        //console.log(greeting)
+
+//**and**//
+
+        //Tortilla de patatas ejercicio booleano
+
+        // let huevos = true
+        // let aceite = true
+        // let patatas = true
+        // let cebolla = false
+        // let sal = false
+
+        // let message = ''
+
+        // if (huevos == true && aceite == true && sal == true){
+
+        //    if (patatas == true && cebolla == true){
+        //     message = 'tortilla de patatas con cebolla'
+        //    } else if (patatas == true && cebolla == false){
+        //     message =' tortilla sin cebolla'
+        //    } else {
+        //     message = 'tortilla francesa'
+        //    }
+        // }else if (huevos == true && aceite == true && sal == false){
+        //     message = 'tortilla patatas con cebolla sin sal'
+        // }else if (patatas == true && cebolla == true){
+        //     message = 'tortillla patatas sin ceboll sin sal'     
+        // } else {
+        //     message = 'tortilla francesa'
+        // }
+        
+        // else if (huevos == true) {
+        //     message = 'Boil eggs'
+        // } else {
+        //     message = 'el menu de la esquina'
+        // }
+    
+    
+    let message2
+
+    //**or**//
+
+    let moto = true
+    let bus = true
+    let coche = true
+    let pie = false
+    let bici = true
+    let metro = true
+    
+    //otro ejemplo con el ! (not)
+    if (!bici) {
+        console.log ('y además haces deporte')
+    }else {
+        console.log ('y si lo planteas...')
+    }
+    
+
+    if ((bici == true || pie == true) || (bus == true || metro == true)) { 
+         message2 = 'eco movilitat'
+    } else {
+         message2 = 'emision co2'
+    }
+
+    // if (bici || pie|| bus) { 
+    //     message2 = 'eco movilitat'
+    // } else {
+    //     message2 = 'emision co2'
+    // }
+        
+    console.log (message2)
+
+//**not**//
+
+let eresNumero = 57
+
+console.log(eresNumero)
+console.log(typeof eresNumero)
+// console.log(isNaN (eresNumero)) // 
+// console.log(!isNaN (eresNumero)) // para saber si eres un numero o no (se utilitzara mucho)
+
+if (eresNumero != 57){ // != para decir si no eres igual a 57, se aplicara la funcion
+    console.log('great')
+}
+
+    </script>
+</body>
+</html>

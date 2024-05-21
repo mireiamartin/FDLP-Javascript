@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for='numero'>Introdueix un número per a fer la conversió</label>
+    <br><br>
+
+    <input type="number" placeholder="Introdueix el número" id="numero">
+
+    <select id='conversio'> 
+        <option value='metresPeus'>de Metres a Peus</option>
+        <option value='peusMetres'>de Peus a Metres</option>
+        <option value='metresIardes'>de Metres a Iardes</option>
+        <option value='iardesMetres'>de Iardes a Metres</option>
+    </select>  
+    
+    <input type="button" value="convertir" onclick="convertir()">
+    <br></br>
+    <div id="result"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
